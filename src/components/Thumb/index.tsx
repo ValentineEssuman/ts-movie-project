@@ -1,11 +1,16 @@
 import React  from 'react';
-import PropTypes from 'prop-types';
 
 import { Link } from 'react-router-dom';
 
 import { Image }  from './Thumb.styles';
 
-const Thumb = ({image, movieId, clicker})=> {
+type Props = {
+    image: string;
+    movieId: number;
+    clicker: boolean;
+}
+
+const Thumb: React.FC<Props> = ({image, movieId, clicker})=> {
     return (
         <div>
             { clicker ? 

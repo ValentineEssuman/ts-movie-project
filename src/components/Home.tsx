@@ -7,12 +7,12 @@ import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL } from '../config';
 import API from '../API';
 
 //components
-import HeroImage from '../components/HeroImage/';
-import Grid from '../components/Grid';
-import Thumb from '../components/Thumb';
-import Spinner  from '../components/Spinner';
-import SearchBar from '../components/SearchBar';
-import Button from '../components/Button';
+import HeroImage from './HeroImage';
+import Grid from './Grid';
+import Thumb from './Thumb';
+import Spinner  from './Spinner';
+import SearchBar from './SearchBar';
+import Button from './Button';
 
 //hooks
 import useHomeFetch  from '../hooks/useHomeFetch';
@@ -22,7 +22,7 @@ import NoImage  from '../images/noimage.jpg';
 console.log('NoImage',NoImage);
 
 
-const Home = () => {
+const Home: React.FC = () => {
 
     const { state, loading, error, searchTerm, setSearchTerm, isLoadingMore, setIsLoadingMore } = useHomeFetch();
     

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper  = styled.div`
+    type: button;
     display: block;
     background: var(--darkGrey);
     width: 25%;

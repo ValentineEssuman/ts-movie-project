@@ -22,6 +22,7 @@ export type Movie = {
   original_title: string;
   overview: string;
   popularity: number;
+  poster_path: string;
   title: string;
   vote_count: number;
   budget: number;
