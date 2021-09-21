@@ -10,9 +10,14 @@ import NoImage  from '../../images/noimage.jpg';
 
 
 //styles
-import { Wrapper, Content, Text } from '../MovieInfo/MovieInfo.styles';
+import { Wrapper, Content, Text } from './MovieInfo.styles';
 
-const MovieInfo = ({themovie}) => (
+//Types
+import { MovieState } from '../../hooks/useMovieFetch';
+type Props = {
+    themovie: MovieState;
+}
+const MovieInfo:React.FC<Props> = ({themovie}) => (
     
     <Wrapper backdrop={ themovie.backdrop_path }>
         <Content>
